@@ -12,7 +12,7 @@ One of the methods for implementing regular expression matching is constructing 
 
 The automaton obtained by Glushkov’s construction is the same as the one obtained by Thompson’s construction algorithm, once its ε-transitions are removed. Therefore, since Thompson’s construction is easier to implement, we implement Thompson’s construction.
 
-The main idea behind Thompson’s construction is simple: it is possible to apply operators on automata. For example, to obtain an automaton that recognizes the language defined by the regular expression `(bc)∗d`, first build three automatons $a_1$; $a_2$; $a_3$ that recognize the languages $L_1={"b"}$; $L_2={"c"}$; $L_3={"d"}$ respectively. After that, apply the concatenation operator to automatons $a_1$; $a_2$ and label the resulting automaton $a_4$, then apply the Kleene star operator on $a_4$ and concatenate it with $a_3$.
+The main idea behind Thompson’s construction is simple: it is possible to apply operators on automata. For example, to obtain an automaton that recognizes the language defined by the regular expression `(bc)∗d`, first build three automatons <a href="https://www.codecogs.com/eqnedit.php?latex=a_1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_1" title="a_1" /></a>; $a_2$; $a_3$ that recognize the languages $L_1={"b"}$; $L_2={"c"}$; $L_3={"d"}$ respectively. After that, apply the concatenation operator to automatons $a_1$; $a_2$ and label the resulting automaton $a_4$, then apply the Kleene star operator on $a_4$ and concatenate it with $a_3$.
 
 In Thompson’s construction, each automaton is assumed (without loss of generality) to have only one start state and final state. The operators are defined as follows:
 
