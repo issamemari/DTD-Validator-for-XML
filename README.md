@@ -26,6 +26,8 @@ In Thompson’s construction, each automaton is assumed (without loss of general
 
 The process of constructing an automaton using Thompson’s construction is very similar to arithmetic expression evaluation; the numbers in arithmetic expressions correspond to minimal automatons that accept only one character in regular expressions and the arithmetic operators in arithmetic expressions correspond to Thompson’s operations in regular expressions. Therefore, it would be convenient to convert the regular expression from infix to post-fix notation to make evaluation easier. For example, the regular expression `(ab)+c∗de?` when converted to post-fix notation becomes `ab·+c∗de?···` where `·` is the concatenation operator. The algorithm for Thompshon’s construction using post-fix regular expressions is described in Algorithm 1.
 
+![Thompson's Construction](https://github.com/issamemari/DTD-Validator-for-XML/blob/master/images/algorithm.png)
+
 Matching strings to regular expressions using DFAs is much more efficient than matching using NFAs. Therefore, since automata that result from Thompson’s construction are non-deterministic, we convert them to deterministic finite automata using the power set construction.
 
 ## Validation
