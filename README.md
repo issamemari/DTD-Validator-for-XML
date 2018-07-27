@@ -46,6 +46,8 @@ However, there should be some correlation between memory consumption and documen
 
 We notice that in figures 1 and 4, the samples form multiple lines. This is probably due to the JVM doing some runtime optimization.
 
+![Figures](https://github.com/issamemari/DTD-Validator-for-XML/blob/master/images/figures.png")
+
 ## Conclusion
 
 The implemented method to validate XML documents against a given DTD seems to have very good performance both in terms of execution time and memory usage. However, we did not implement validation using an in-memory representation, therefore we are not able to compare execution time for the two methods. We hypothesize that execution time will be better if using an in-memory representation because because in streaming there is IO overhead, and this remains to be experimentally verified.
