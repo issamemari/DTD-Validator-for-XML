@@ -46,7 +46,7 @@ However, there should be some correlation between memory consumption and documen
 
 We notice that in figures 1 and 4, the samples form multiple lines. This is probably due to the JVM doing some runtime optimization.
 
-![Figures](https://github.com/issamemari/DTD-Validator-for-XML/blob/master/images/figures.png")
+![Figures](https://github.com/issamemari/DTD-Validator-for-XML/blob/master/images/figures.png)
 
 ## Conclusion
 
